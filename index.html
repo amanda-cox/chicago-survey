@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chicago Survey</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <form action="index.html" method="post">
+      
+      <h1>Chicago Survey</h1>
+      
+      <fieldset>
+        
+        <legend>Your Information</legend>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="user_email">
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="user_phone">
+        
+      </fieldset>
+      
+      <fieldset>
+      
+        <legend>Questionarre</legend>
+      
+        <label>Do you live on the...</label>
+        <input type="radio" id="northside" value="northside" name="user_location"><label for="northside">North Side</label><br>
+        <input type="radio" id="southside" value="southside" name="user_location"><label for="southside">South Side</label>
+        <input type="radio" id="westside" value="westside" name="user_location"><label for="westside">West Side</label>
+        
+        <label for="housing">What kind of housing do you have?</label>
+        <select id="housing" name="user_housing">
+          <option value="house">House</option>
+          <option value="apartment">Apartment</option>
+          <option value="condo">Condo</option>
+          <option value="other">Other</option>
+        </select>
+        
+        <label>What kind of activities do you enjoy in Chicago? (Select all that apply)</label>
+        <input type="checkbox" id="beach" value="activity_beach" name="user_activity"><label for="beach">Going to the beach</label>
+        <input type="checkbox" id="food" value="activity_food" name="user_activity"><label for="food">Trying new food</label>
+        <input type="checkbox" id="bike" value="activity_beach" name="user_activity"><label for="beach">Bike riding</label>
+        <input type="checkbox" id="beach" value="activity_bike" name="user_activity"><label for="bike">Going to the park</label>
+        <input type="checkbox" id="park" value="activity_park" name="user_activity"><label for="park">Seeing live music</label>
+        <input type="checkbox" id="drink" value="activity_drink" name="user_activity"><label for="drink">Grabbing a drink</label>
+        <input type="checkbox" id="museum" value="activity_museum" name="user_activity"><label for="museum">Going to museums</label>
+        
+        <label>Would you recommend Chicago to someone thinking of moving here?</label>
+        <input type="radio" id="definitely" value="definitely_recommend" name="user_recommendation"><label for="definitely">Definitely</label>
+        <input type="radio" id="maybe" value="maybe_recommend" name="user_recommendation"><label for="maybe">Maybe</label>
+        <input type="radio" id="no" value="no_recommend" name="user_recommendation"><label for="no">No</label>
+        
+        <label for="answer">Is there anything else you would like us to know?</label>
+        <textarea id="answer" name="user_answer"></textarea>
+        
+      </fieldset>
+      
+      <button type="submit">Submit</button>
+    
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
